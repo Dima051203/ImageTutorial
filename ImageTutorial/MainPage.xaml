@@ -4,6 +4,9 @@
              x:Class="ImageTutorial.MainPage">
     <StackLayout Margin="20,35,20,20">
         <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Papio_anubis_%28Serengeti%2C_2009%29.jpg/200px-Papio_anubis_%28Serengeti%2C_2009%29.jpg"
-               HeightRequest="300" />
+       Aspect="Fill"
+       HeightRequest="{OnPlatform iOS=300, Android=250}"
+       WidthRequest="{OnPlatform iOS=300, Android=250}"
+       HorizontalOptions="Center" />
     </StackLayout>
 </ContentPage>
